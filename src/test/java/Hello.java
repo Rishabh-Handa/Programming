@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Hello {
@@ -35,9 +33,28 @@ public class Hello {
 
     }
 
+	static List<Integer> reverseOrder(boolean flag) {
+		int[] arr = {1,2,3,4,5};
+
+		List<Integer> list = new ArrayList<>();
+		for(int x: arr) {
+			list.add(x);
+		}
+
+		//Collections.reverse(list);
+		for(int i=0, j=list.size() - 1; i<j; i++, j--) {
+			int temp = list.get(i);
+			list.set(i, list.get(j));
+			list.set(j, temp);
+		}
+		return list;
+	}
+
     public static void main(String[] args) {
 	int x = minSum(Arrays.asList(2, 3), 1);
 
 	System.out.println(x);
+
+		System.out.println(reverseOrder(true));
     }
 }

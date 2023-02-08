@@ -12,7 +12,8 @@ import java.util.stream.Collectors;
 
 /*
 
-Given a keypad as shown in diagram, and an N digit number. List all words which are possible by pressing these numbers.
+Given a keypad as shown in diagram, and an N digit number.
+ List all words which are possible by pressing these numbers.
  */
 
 
